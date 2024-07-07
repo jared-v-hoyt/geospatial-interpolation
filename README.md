@@ -38,11 +38,11 @@ positional arguments:
 options:
 
 - `-h`, `--help`: Show the help message and exit
-- `-p POWER`, `--power POWER`: The power parameter, $p$, used in the Inverse Distance Weighting equation. **(default: 2)**
+- `-p POWER`, `--power POWER`: The power parameter, $p$, used in the Inverse Distance Weighting equation **(default: 2)**.
 
 $$
-z_{p} = \displaystyle \frac{\sum_{i=1}^{n}{\frac{z_{i}}{d_{i}^{p}}}}{\sum_{i=1}^{n}{\frac{1}{d_{i}^{p}}}}
+\displaystyle z_{p} = \frac{\sum_{i=1}^{n}{\frac{z_{i}}{d_{i}^{p}}}}{\sum_{i=1}^{n}{\frac{1}{d_{i}^{p}}}}
 $$
 
-- `-r RESOLUTION`, `--resolution RESOLUTION`: The number of subdivisions along each axis. **(default: 50)**
-- `-s,` `--save`: Save the data as a CSV file to the same directory where the 3-dimensional point data is stored. **(default: False)**
+- `-r RESOLUTION`, `--resolution RESOLUTION`: The number of subdivisions along each axis **(default: 50)**.
+- `-s,` `--save`: Save the data as a CSV file to the same directory where the 3-dimensional point data is stored.
