@@ -4,6 +4,13 @@
 
 A Python-based interpolation CLI that utilizes real-world point-cloud data and spatial interpolation techniques to create a smooth heightmap of a given area.
 
+$$
+\begin{align*}
+    p_{1} &= (0.25, 0.25, 5.00) & p_{2} &= (0.50, 0.75, 2.00) \\
+    p_{3} &= (0.75, 0.50, 3.00) & p_{4} &= (1.00, 0.75, 6.00)
+\end{align*}
+$$
+
 Inverse Distance Weighting | Shape Function
 :-------------------------:|:-------------:
 <img src="./assets/images/inverse_distance_weighting.png" alt="Inverse Distance Weighting" /> | <img src="./assets/images/shape_function.png" alt="Inverse Distance Weighting" />
