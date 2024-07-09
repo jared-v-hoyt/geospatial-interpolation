@@ -2,7 +2,13 @@
 
 ## Overview
 
-A Python-based interpolation application that utilizes real-world point-cloud data and spatial interpolation techniques to create a smooth heightmap of a given area.
+A Python-based interpolation CLI that utilizes real-world point-cloud data and spatial interpolation techniques to create a smooth heightmap of a given area.
+
+Inverse Distance Weighting | Shape Function
+:-------------------------:|:-------------:
+<img src="./assets/images/inverse_distance_weighting.png" alt="Inverse Distance Weighting" /> | <img src="./assets/images/shape_function.png" alt="Inverse Distance Weighting" />
+
+<!-- ![Inverse Distance Weighting](./assets/images/inverse_distance_weighting.png) ![Shape Function](./assets/images/shape_function.png) -->
 
 ## Features
 
