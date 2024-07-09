@@ -24,20 +24,20 @@ def main():
     match args.method:
         case "inverse_distance_weighting":
             interpolated_data = inverse_distance_weighting(points, args.resolution, args.power)
+            combined_array = np.vstack((interpolated_data, interpolated_data))
+            plot_data(combined_array, "Inverse Distance Weighting")
         case "shape_function":
             interpolated_data = shape_function(points, args.resolution)
-
-    combined_array = np.vstack((interpolated_data, interpolated_data))
+            combined_array = np.vstack((interpolated_data, interpolated_data))
+            plot_data(combined_array, "Shape Function")
 
     if args.save:
         np.savetxt(
-            os.path.dirname(args.points) + "/interpolated_data.csv",
+            os.path.dirname(args.points) + f"/{args.method}_interpolated_data.csv",
             np.unique(interpolated_data, axis=0),
             delimiter=",",
             fmt="%f"
         )
-
-    plot_data(combined_array, "Inverse Distance Weighting")
 
 
 if __name__ == "__main__":
